@@ -30,7 +30,7 @@ var mongoclient = 'mongodb://localhost:27017/resume_app_db'
 mongoclient = "mongodb+srv://resumeApp:B5emcpwPuWwiwZB3@resumeapp.xd4fr.mongodb.net/resume_app_db?retryWrites=true&w=majority"
 mongoose.connect(mongoclient, { useNewUrlParser: true });
 var route = require('./routes/route');
-const port = 3001;
+const port = 3004;
 var app = express();
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true }));
